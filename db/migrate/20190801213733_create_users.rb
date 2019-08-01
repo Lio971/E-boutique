@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :email
       t.integer :age 
       #Add link to city
-      t.belongs_to :city
+      t.belongs_to :city, index: true
 
       t.timestamps
     end
