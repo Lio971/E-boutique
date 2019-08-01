@@ -10,9 +10,23 @@ User.destroy_all
     city:City.find(rand(City.first.id..City.last.id)))
 end
 
-Tu vas faire 10 villes en base avec Faker et les lier avec les utilisateurs du seed.
 City.destroy_all
 10.times do
     City.create!(name:FAKER::Adress.city, 
     zip_code: Faker::Address.zip_code)
 end
+
+Gossip.destroy_all
+20.times do
+    Gossip.create!(
+    title:FAKER::Quote.singular_siegler,
+    content:FAKER::Quote.matz,
+    user:User.find(rand(User.first.id..User.last.id)))
+end
+
+Chaque gossip aura (au minimum) un tag
+Tag.destroy_all
+10.times do
+    Tag.create!(
+    title:FAKER::Quote.singular_siegler
+    )
