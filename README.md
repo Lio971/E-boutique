@@ -72,6 +72,13 @@ Tu vas faire quelques PM en base avec Faker et leur donner un expéditeur et un 
 Bravo si t'es arrivé jusque-là ! 
 === Les exercices ci-dessous sont optionnels et ne seront pas évalué ===
 
+J'AI ESSAYE JUSQU'ICI
+
+
+
+
+
+
 g) LES COMMENTAIRES
 Crée une classe Comment, qui aura comme attributs :
 
