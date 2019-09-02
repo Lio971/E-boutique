@@ -1,6 +1,7 @@
 class Item < ApplicationRecord
 validates :title,
 presence: true,
+uniqueness: { case_sensitive: false } #Penser à vérifier que cette fonctionnalité fonctionne, elle sert à éviter que l'on puisse enregistrer deux fois le même titre, ainsi chaque produit aura son propre titre
 length: { in: 3..20 }
 
 validates :description,
