@@ -8,7 +8,6 @@
 require 'faker'
 
 Item.destroy_all
-
 20.times do
 Item.create!(
     title: Faker::Creature::Cat.name,
